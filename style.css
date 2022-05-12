@@ -1,6 +1,7 @@
 body {
     background-color: green;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -40,4 +41,8 @@ body {
     align-self: flex-end;
     padding-right: 20px;
     transform: rotateX(180deg);
+}
+
+#GL {
+    size: 50px;
 }

@@ -1,6 +1,4 @@
-console.log("lleva pues");
-window.onload = function() {
-
+function carta (e) {
     let up = document.querySelector("#up");
     let middle = document.querySelector("#middle");
     let down = document.querySelector("#down");
@@ -19,6 +17,13 @@ window.onload = function() {
         up.style.color = "red";
         down.style.color = "red";
         middle.style.color = "red";
+    } else {
+        up.style.color = "black";
+        down.style.color = "black";
+        middle.style.color = "black";
     }
 }
-    
+window.onload = function() {
+    let GL = document.querySelector("#GL");
+    GL.addEventListener("click", carta);
+}
